@@ -6,18 +6,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class creds {
 	//Testcase
 	//open URL
 	//enter email and password
 	//submit
-	
-	WebDriver driver;
+
+
+WebDriver driver = new ChromeDriver();
+
 	
 	@BeforeClass
 	public void setup() {
-		driver =new ChromeDriver();
+
+WebDriverManager.chromedriver().setup();
+
+
 	}
 
 	@Test(priority=0)

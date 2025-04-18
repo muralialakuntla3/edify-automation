@@ -1,6 +1,7 @@
 package createlead;
 
 import java.time.Duration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +14,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class leads {
-	WebDriver driver;
+//	WebDriver driver;
+	
+	WebDriver driver = new ChromeDriver();
 @BeforeTest
 	public void OpenURL() {
-	driver=new ChromeDriver();
+	
+	WebDriverManager.chromedriver().setup();
 	driver.manage().window().maximize();
 	driver.get("https://dev.crm.digitaledify.ai/");
 }

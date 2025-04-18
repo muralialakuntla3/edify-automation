@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-15T09:54:36 IST" name="Suite" finished-at="2025-04-15T09:54:51 IST" duration-ms="15631">
+  <suite started-at="2025-04-18T10:52:57 IST" name="Default suite" finished-at="2025-04-18T10:53:05 IST" duration-ms="7078">
     <groups>
     </groups>
-    <test started-at="2025-04-15T09:54:36 IST" name="Test" finished-at="2025-04-15T09:54:51 IST" duration-ms="15631">
+    <test started-at="2025-04-18T10:52:57 IST" name="Default test" finished-at="2025-04-18T10:53:05 IST" duration-ms="7078">
       <class name="createlead.leads">
-        <test-method is-config="true" signature="OpenURL()[pri:0, instance:createlead.leads@50caa560]" started-at="2025-04-15T09:54:36 IST" name="OpenURL" finished-at="2025-04-15T09:54:42 IST" duration-ms="6071" status="PASS">
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:createlead.leads@ed3068a]" started-at="2025-04-18T10:52:58 IST" name="OpenURL" finished-at="2025-04-18T10:52:59 IST" duration-ms="1548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenURL -->
-        <test-method signature="login()[pri:1, instance:createlead.leads@50caa560]" started-at="2025-04-15T09:54:44 IST" name="login" finished-at="2025-04-15T09:54:45 IST" duration-ms="288" status="PASS">
+        <test-method signature="login()[pri:1, instance:createlead.leads@ed3068a]" started-at="2025-04-18T10:52:59 IST" name="login" finished-at="2025-04-18T10:52:59 IST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@50caa560]" started-at="2025-04-15T09:54:45 IST" name="createlead" data-provider="leadData" finished-at="2025-04-15T09:54:49 IST" duration-ms="4290" status="PASS">
+        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@ed3068a]" started-at="2025-04-18T10:52:59 IST" name="createlead" data-provider="leadData" finished-at="2025-04-18T10:53:02 IST" duration-ms="2645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createlead -->
-        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@50caa560]" started-at="2025-04-15T09:54:49 IST" name="createlead" data-provider="leadData" finished-at="2025-04-15T09:54:50 IST" duration-ms="1092" status="FAIL">
+        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@ed3068a]" started-at="2025-04-18T10:53:02 IST" name="createlead" data-provider="leadData" finished-at="2025-04-18T10:53:03 IST" duration-ms="953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,28 +54,49 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlead -->
+        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@ed3068a]" started-at="2025-04-18T10:53:03 IST" name="createlead" data-provider="leadData" finished-at="2025-04-18T10:53:05 IST" duration-ms="1575" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ashwin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ashwin@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9908088535]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (261, 34). Other element would receive the click: <div class="relative p-4 w-full max-w-3xl xl:max-w-5xl">...</div>
+              <![CDATA[element click intercepted: Element <button class="flex items-center gap-2 px-4 h-8 justify-center rounded-md bg-[#0176D3] p-1 text-sm font-normal leading-6 text-white">...</button> is not clickable at point (1295, 122). Other element would receive the click: <div>...</div>
   (Session info: chrome=135.0.7049.85)
 Build info: version: '4.25.0', revision: '030fcf7918'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e47482d11e0f425742dc7c9d536189f9, clickElement {id=f.6FA69B7F53FCDE8603367963A83A5C4F.d.850E8A2A35086916B7AAB5D4AC4344A9.e.85}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\mayno\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52024/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e47482d11e0f425742dc7c9d536189f9)] -> xpath: //span[text()='Leads']]
-Session ID: e47482d11e0f425742dc7c9d536189f9]]>
+Command: [b1c759e3804297ddf97b7c7af188a63a, clickElement {id=f.F43A8B3227B79A988C6A501664BBCE45.d.1FA1A9E5768CB5578DA1F777BA0C5E9F.e.35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\mayno\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54338/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b1c759e3804297ddf97b7c7af188a63a)] -> xpath: //button[text()='Create Lead']]
+Session ID: b1c759e3804297ddf97b7c7af188a63a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (261, 34). Other element would receive the click: <div class="relative p-4 w-full max-w-3xl xl:max-w-5xl">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="flex items-center gap-2 px-4 h-8 justify-center rounded-md bg-[#0176D3] p-1 text-sm font-normal leading-6 text-white">...</button> is not clickable at point (1295, 122). Other element would receive the click: <div>...</div>
   (Session info: chrome=135.0.7049.85)
 Build info: version: '4.25.0', revision: '030fcf7918'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e47482d11e0f425742dc7c9d536189f9, clickElement {id=f.6FA69B7F53FCDE8603367963A83A5C4F.d.850E8A2A35086916B7AAB5D4AC4344A9.e.85}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\mayno\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52024/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e47482d11e0f425742dc7c9d536189f9)] -> xpath: //span[text()='Leads']]
-Session ID: e47482d11e0f425742dc7c9d536189f9
+Command: [b1c759e3804297ddf97b7c7af188a63a, clickElement {id=f.F43A8B3227B79A988C6A501664BBCE45.d.1FA1A9E5768CB5578DA1F777BA0C5E9F.e.35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\mayno\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54338/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b1c759e3804297ddf97b7c7af188a63a)] -> xpath: //button[text()='Create Lead']]
+Session ID: b1c759e3804297ddf97b7c7af188a63a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -88,7 +109,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at createlead.leads.createlead(leads.java:47)
+at createlead.leads.createlead(leads.java:55)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -121,46 +142,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createlead -->
-        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@50caa560]" started-at="2025-04-15T09:54:50 IST" name="createlead" data-provider="leadData" finished-at="2025-04-15T09:54:51 IST" duration-ms="1405" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ashwin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ashwin@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[9908088535]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createlead -->
       </class> <!-- createlead.leads -->
-      <class name="login.creds">
-        <test-method is-config="true" signature="setup()[pri:0, instance:login.creds@60015ef5]" started-at="2025-04-15T09:54:42 IST" name="setup" finished-at="2025-04-15T09:54:43 IST" duration-ms="1014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openURL()[pri:0, instance:login.creds@60015ef5]" started-at="2025-04-15T09:54:43 IST" name="openURL" finished-at="2025-04-15T09:54:44 IST" duration-ms="1011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="Credentials()[pri:1, instance:login.creds@60015ef5]" started-at="2025-04-15T09:54:44 IST" name="Credentials" finished-at="2025-04-15T09:54:44 IST" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Credentials -->
-        <test-method signature="submit()[pri:2, instance:login.creds@60015ef5]" started-at="2025-04-15T09:54:44 IST" name="submit" finished-at="2025-04-15T09:54:44 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submit -->
-      </class> <!-- login.creds -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
