@@ -30,8 +30,6 @@ public class leads {
 		return new Object[][] {
 			{"Kiran","kiran@gmail.com","8019684875"},
 			{"maheshwaran","maheshwaran@gmail.com","8019684875"},
-			{"ashwin","ashwin@gmail.com","9908088535"},
-			
 		};
 		
 		}	
