@@ -13,14 +13,14 @@ public class creds {
 	//open URL
 	//enter email and password
 	//submit
+WebDriver driver;
 
 
-WebDriver driver = new ChromeDriver();
 
 	
 	@BeforeClass
 	public void setup() {
-
+ driver = new ChromeDriver();
 WebDriverManager.chromedriver().setup();
 
 
