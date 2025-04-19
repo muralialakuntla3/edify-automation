@@ -14,13 +14,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class leads {
-//	WebDriver driver;
+	WebDriver driver;
 	
-	WebDriver driver = new ChromeDriver();
+
 @BeforeTest
 	public void OpenURL() {
 	
 	WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://dev.crm.digitaledify.ai/");
 }
@@ -40,7 +41,7 @@ public class leads {
 		driver.findElement(By.name("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
 	}
-	@Test(priority=2,dataProvider="leadData")
+	@Test(priority=2,dataProvider="leadData",dependsOnMethods = "login")
 	public void createlead(String name,String email,String phone) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		

@@ -6,7 +6,8 @@
       <class name="createlead.leads">
         <methods>
           <include name="OpenURL"/>
-          <include name="createlead" invocation-numbers="2"/>
+          <include name="createlead" invocation-numbers="0 1"/>
+          <include name="login"/>
         </methods>
       </class> <!-- createlead.leads -->
     </classes>

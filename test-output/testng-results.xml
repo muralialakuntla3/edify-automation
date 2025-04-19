@@ -2,28 +2,62 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T09:31:45 IST" name="Default suite" finished-at="2025-04-19T09:31:50 IST" duration-ms="4719">
+  <suite started-at="2025-04-19T09:41:03 IST" name="Default suite" finished-at="2025-04-19T09:41:11 IST" duration-ms="8041">
     <groups>
     </groups>
-    <test started-at="2025-04-19T09:31:45 IST" name="Default test" finished-at="2025-04-19T09:31:50 IST" duration-ms="4719">
-      <class name="login.creds">
-        <test-method is-config="true" signature="setup()[pri:0, instance:login.creds@ba54932]" started-at="2025-04-19T09:31:45 IST" name="setup" finished-at="2025-04-19T09:31:49 IST" duration-ms="3264" status="PASS">
+    <test started-at="2025-04-19T09:41:03 IST" name="Default test" finished-at="2025-04-19T09:41:11 IST" duration-ms="8041">
+      <class name="createlead.leads">
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:createlead.leads@46fa7c39]" started-at="2025-04-19T09:41:03 IST" name="OpenURL" finished-at="2025-04-19T09:41:06 IST" duration-ms="2839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openURL()[pri:0, instance:login.creds@ba54932]" started-at="2025-04-19T09:31:49 IST" name="openURL" finished-at="2025-04-19T09:31:50 IST" duration-ms="1004" status="PASS">
+        </test-method> <!-- OpenURL -->
+        <test-method signature="login()[pri:1, instance:createlead.leads@46fa7c39]" started-at="2025-04-19T09:41:06 IST" name="login" finished-at="2025-04-19T09:41:06 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method signature="Credentials()[pri:1, instance:login.creds@ba54932]" started-at="2025-04-19T09:31:50 IST" name="Credentials" finished-at="2025-04-19T09:31:50 IST" duration-ms="275" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@46fa7c39]" started-at="2025-04-19T09:41:06 IST" name="createlead" data-provider="leadData" finished-at="2025-04-19T09:41:10 IST" depends-on-methods="createlead.leads.login" duration-ms="3502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kiran]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kiran@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8019684875]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Credentials -->
-        <test-method signature="submit()[pri:2, instance:login.creds@ba54932]" started-at="2025-04-19T09:31:50 IST" name="submit" finished-at="2025-04-19T09:31:50 IST" duration-ms="105" status="PASS">
+        </test-method> <!-- createlead -->
+        <test-method signature="createlead(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:createlead.leads@46fa7c39]" started-at="2025-04-19T09:41:10 IST" name="createlead" data-provider="leadData" finished-at="2025-04-19T09:41:11 IST" depends-on-methods="createlead.leads.login" duration-ms="1264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maheshwaran]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maheshwaran@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8019684875]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submit -->
-      </class> <!-- login.creds -->
+        </test-method> <!-- createlead -->
+      </class> <!-- createlead.leads -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
